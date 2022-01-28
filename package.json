@@ -1,0 +1,23 @@
+{
+  "name": "lib-mdfiles",
+  "version": "1.0.0",
+  "description": "The project is a library made with node js to fix link errors in a md file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranciscoGSilverio/node-lib-mdfiles.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranciscoGSilverio/node-lib-mdfiles/issues"
+  },
+  "homepage": "https://github.com/FranciscoGSilverio/node-lib-mdfiles#readme",
+  "dependencies": {
+    "chalk": "^5.0.0"
+  }
+}
