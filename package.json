@@ -4,7 +4,8 @@
   "description": "The project is a library made with node js to fix link errors in a md file.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cli": "node cli.mjs ./arquivos/texto1.md"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,10 @@
   },
   "homepage": "https://github.com/FranciscoGSilverio/node-lib-mdfiles#readme",
   "dependencies": {
-    "chalk": "^5.0.0"
+    "chalk": "^5.0.0",
+    "node-fetch": "^3.2.0"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
   }
 }

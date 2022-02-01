@@ -8,23 +8,21 @@ function getLinks(text) {
   while ((temp = regex.exec(text)) !== null) {
     resultsArr.push({ [temp[1]]: temp[2] });
   }
-  return resultsArr;
+  return resultsArr.length === 0 ? "no links in file" : resultsArr;
 }
 
 function errorHandle(error) {
   throw new Error(chalk.red(error.code, "no file in path"));
 }
 
-async function getFile(filePath) {
+export async function getFile(filePath) {
   const encoding = "utf-8";
   try {
     const text = await fs.promises.readFile(filePath, encoding);
-    console.log(getLinks(text));
+    return getLinks(text);
   } catch (error) {
     errorHandle(error);
   } finally {
     console.log(chalk.blue("Operation finished"));
   }
 }
-
-getFile("./arquivos/texto1.md");
